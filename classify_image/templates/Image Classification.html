@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0057)http://tf-classify.herokuapp.com/classify_image/classify/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Image Classification</title>
+  <link rel="stylesheet" href="./Image Classification_files/classify.a3bd7b01be55.css" type="text/css">
+  <link rel="stylesheet" href="./Image Classification_files/materialize.min.css">
+  <link href="./Image Classification_files/css" rel="stylesheet">
+  <link href="./Image Classification_files/icon" rel="stylesheet">
+  <script src="./Image Classification_files/jquery-3.2.1.min.js.download" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="./Image Classification_files/materialize.min.js.download"></script>
+  <script src="./Image Classification_files/classify.0a515ad3f209.js.download"></script>
+</head>
+
+<body>
+  <div class="container row main-container">
+    <div class="col s12 dd-container">
+      <div class="card dd-card">
+        <div class="card-content black-text file-field">
+          <div id="drop-container">
+            <i class="material-icons large upload-icon">cloud_upload</i>
+            <span class="drag-txt"><b>Drag and drop image here</b></span>
+            <span class="or-txt">or</span>
+            <form action="http://tf-classify.herokuapp.com/classify_image/classify/#">
+              <div class="waves-effect waves-light btn" id="browse-container">
+                <span>Browse files</span>
+                <input type="file" id="browse-button" accept="image/*">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 uf-container">
+      <div class="card uf-card">
+        <img class="card crop" id="img-card">
+      </div>
+      <div class="waves-effect waves-light btn" id="upload-button">
+        <span>Upload and Detect Image</span>
+      </div>
+      <div class="waves-effect waves-light btn" id="go-back">
+        <span>Go Back</span>
+      </div>
+    </div>
+    <div class="col s12 dt-container">
+      <div class="card dt-card" id="stat-table">
+      </div>
+      <div class="waves-effect waves-light btn" id="go-start">
+        <span>Go Back</span>
+      </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div style="width: 100%; overflow: hidden;">
+          <div style="width: 100px; float: left;">
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="loading-text">
+            <h5>Loading...</h5></div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div><div class="hiddendiv common"></div></body></html>
